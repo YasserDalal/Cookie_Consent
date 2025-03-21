@@ -1,0 +1,126 @@
+body {
+  font-family: Roboto;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.main-container {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(146, 223, 197);
+}
+
+.main-container h1, 
+.main-container h2,
+.main-cookie-container h3{
+  font-weight: 400;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 170px;
+}
+
+.main-cookie-container {
+  width: 280px;
+  height: 300px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 20px;
+  color: rgb(237, 235, 235);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+
+.fa-cookie-bite::before{
+  content: "\f564";
+  font-size: 3.5em;
+  z-index: 100;
+}
+
+.icon-container {
+  position: relative;
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.fa-x::before {
+  content: "\58";
+  font-weight: 500;
+  padding: 10px;
+  color: #FFF;
+}
+
+.fa-x {
+  align-self: center;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.inner-description-container {
+  font-size: 23px;
+  word-spacing: 2px;
+  line-height: 32px;
+}
+
+.inner-description-container .description{
+  width: 200px;
+  padding-bottom: 25px;
+}
+
+.inner-button-cookie {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.cookie-button {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.cookie-button:hover {
+  background-color: rgb(206, 206, 206);
+}
+
+.main-cookie-container.removeContainer {
+  animation: removeContainer 0.3s ease;
+}
+
+.restrict-scroll {
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 0px 0px 15px 0px rgb(93, 93, 93);
+}
+
+.watermark-of-yasser {
+  position: absolute;
+  bottom: 0px;
+  left: 7px;
+}
+
+@keyframes removeContainer {
+  0% {
+    right: 10px;
+  }
+
+  100% {
+    right: -400px;
+  }
+}
